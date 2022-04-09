@@ -1,0 +1,25 @@
+table{
+    border : 1px solid lightgrey;
+    background-color: rgba(211, 211, 211, 0.822);
+    display : inline-block;
+}
+td{
+    width : 30px;
+    height : 30px;
+    border : 1px solid lightgrey;
+    margin : 0px;
+}
+#color{
+    height : 30px;
+    padding : 0px;
+}
+#lineborder{
+    background-color: white;
+    text-align: center;
+}
+#border{
+    width : 50px;
+}
+#xpos, #ypos{
+    width : 50px;
+}

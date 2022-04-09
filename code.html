@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("그림판 웹 페이지.css");
+    </style>
+</head>
+<body>
+    <h3>그림판입니다. 그림을 그려보세요</h3>
+    <hr>
+    <table>
+        <tr>
+            <td onclick = "changeColor(this)" style = "background-color : red"></td>
+            <td onclick = "changeColor(this)" id = "darkred" style = "background-color : darkred"></td>
+            <td onclick = "changeColor(this)" id = "orange" style = "background-color : orange"></td>
+            <td onclick = "changeColor(this)" id = "yellow" style = "background-color : yellow"></td>
+            <td onclick = "changeColor(this)" style = "background-color : olive"></td>
+            <td onclick = "changeColor(this)" style = "background-color : purple"></td>
+            <td onclick = "changeColor(this)" style = "background-color : violet"></td>
+            <td onclick = "changeColor(this)" style = "background-color : white"></td>
+            <td><input onchange = "changeColor2(this)" id = "color" type = "color"></td>
+        </tr>
+        <tr>
+            <td onclick = "changeColor(this)" style = "background-color : green"></td>
+            <td onclick = "changeColor(this)" style = "background-color : lightgreen"></td>
+            <td onclick = "changeColor(this)" style = "background-color : blue"></td>
+            <td onclick = "changeColor(this)" style = "background-color : skyblue"></td>
+            <td onclick = "changeColor(this)" style = "background-color : darkcyan"></td>
+            <td onclick = "changeColor(this)" style = "background-color : black"></td>
+            <td onclick = "changeColor(this)" style = "background-color : lightgrey"></td>
+            <td onclick = "changeColor(this)" style = "background-color : grey"></td>
+        </tr>
+    </table>
+    <table>
+        <tr><td id = "lineborder">선굵기</td><td id = "showcolor" rowspan="2"></td>
+        <td><input id = "xpos" type = "text" value = "x = "></td></tr>
+        <tr><td><input onchange = "changeBorder()" id = "border" type = "text"></td>
+        <td><input id = "ypos" type = "text" value = "y = "></td></tr>
+    </table>
+    <canvas id = "canvas" width = "600" height = "600" style = "background-color: aliceblue;"></canvas>
+    <script src = "그림판 웹 페이지.js"></script>
+</body>
+</html>
